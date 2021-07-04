@@ -20,7 +20,7 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
         run: |
           pip3 install -r requirements.txt
-          python train.py
+          python training/train.py
           
           echo "MODEL METRICS"
           cat metrics.txt
