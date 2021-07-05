@@ -20,7 +20,6 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
         run: |
           ls
-          sudo mkdir training/outputs/
           
           pip3 install -r requirements.txt
           python training/train.py
