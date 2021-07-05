@@ -35,8 +35,8 @@ train_score = regr.score(X_train, y_train) * 100
 test_score = regr.score(X_test, y_test) * 100
 
 # Create directory for outputs
-if not os.path.exists("./training/outputs"):
-        os.makedirs("./training/outputs")
+if not os.path.exists("./training/outputs/"):
+        os.makedirs("./training/outputs/")
 
 # Write scores to a file
 with open("training/outputs/metrics.txt", 'w') as outfile:
