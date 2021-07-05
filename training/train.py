@@ -35,11 +35,11 @@ train_score = regr.score(X_train, y_train) * 100
 test_score = regr.score(X_test, y_test) * 100
 
 # Create directory for outputs
-if not os.path.exists("/training/outputs"):
-        os.makedirs("/training/outputs")
+if not os.path.exists("./training/outputs"):
+        os.makedirs("./training/outputs")
 
 # Write scores to a file
-with open("/training/outputs/metrics.txt", 'w') as outfile:
+with open("./training/outputs/metrics.txt", 'w') as outfile:
         outfile.write("Training variance explained: %2.1f%%\n" % train_score)
         outfile.write("Test variance explained: %2.1f%%\n" % test_score)
 
@@ -64,7 +64,7 @@ ax.set_ylabel('Feature', fontsize = axis_fs)#ylabel
 ax.set_title('Random forest\nfeature importance', fontsize = title_fs)
 
 plt.tight_layout()
-plt.savefig("/training/outputs/feature_importance.png",dpi=120) 
+plt.savefig("./training/outputs/feature_importance.png",dpi=120) 
 plt.close()
 
 
@@ -88,5 +88,5 @@ plt.ylim((2.5,8.5))
 plt.xlim((2.5,8.5))
 
 plt.tight_layout()
-plt.savefig("/training/outputs/residuals.png",dpi=120) 
+plt.savefig("./training/outputs/residuals.png",dpi=120) 
 
