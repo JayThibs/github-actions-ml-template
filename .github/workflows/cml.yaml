@@ -21,7 +21,7 @@ jobs:
         run: |
           ls
           pip3 install -r requirements.txt
-          python training/train.py
+          sudo python training/train.py
           
           echo "## MODEL METRICS" >> report.md
           cat training/outputs/metrics.txt >> report.md
