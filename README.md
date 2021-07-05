@@ -19,7 +19,8 @@ When experimenting with the repository, make sure to create a new branch. You ca
 
 The only environmental variable set in `.github/workflows/cml.yaml` is `GITHUB_TOKEN`, which is configured by default in every GitHub repository. No secrets must be set by the user.
 
-References:
+## References:
 
 Code was borrowed from: https://github.com/elleobrien/wine
+
 Great video covering this topic: https://www.youtube.com/watch?v=9BgIDqAzfuA
