@@ -33,6 +33,7 @@ jobs:
           
           cml-send-comment report.md
           
-          cml-pr training/outputs/*
+          echo "## Add [skip ci] in commit message on pr to prevent a second action to be triggered."
+          cml-pr training/outputs/* 
           
           
